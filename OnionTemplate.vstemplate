@@ -1,0 +1,23 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Onion Architecture Web API</Name>
+    <Description>Generates the skeleton for Core, Infrastructure and Web projects implementing Onion Architecture.</Description>
+    <Icon>onion.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <PreviewImage>onion-architecture.jpg</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+        OnionTemplate.Core\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Infrastructure" CopyParameters="true">
+        OnionTemplate.Infrastructure\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+        OnionTemplate.Web\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
